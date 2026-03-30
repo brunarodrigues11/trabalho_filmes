@@ -16,7 +16,7 @@ with open('data.csv', 'r',
 
         rt.append(int(linha['Run Time in minutes']))
         mr.append(float(linha['Movie Rating']))
-        yr.append(float(linha['Year of Release']))
+        yr.append(int(linha['Year of Release']))
 
         if cont == 1:
             titulo = linha
@@ -29,20 +29,23 @@ with open('data.csv', 'r',
 
 #  MIN, MAX e MEDIA     
 
-    print("Menor tempo de filme: " , min(rt))
-    print("Menor avaliação: " , min(mr))
+print("Menor tempo de filme: " , min(rt))
+print("Menor avaliação: " , min(mr))
 
-    print("Maior tempo de filme: " , max(rt))
-    print("Maior avaliação: " , max(mr))
+print("Maior tempo de filme: " , max(rt))
+print("Maior avaliação: " , max(mr))
 
-    mediart = sum(rt) / len(rt)
-    print(mediart) 
+mediart = sum(rt) / len(rt)
+print(mediart) 
 
-    mediamr = sum(mr) / len(mr)
-    print(mediamr)
+mediamr = sum(mr) / len(mr)
+print(mediamr)
 
 
-#  FILTROS        
+#  FILTROS   (fazer + 2)(precisa consertar)     
 
-    if yr == 1950 and mr >= 8.0:     # filmes do ano de 1950 e com notas acima de 8.0 
-        print(yr , mr)
+indice = 0
+for y in yr:
+    if y == 1950 and mr[indice] >= 8.0:     # filmes do ano de 1950 e com notas acima de 8.0 
+        print(y, mr[indice], indice)
+    indice +=1
