@@ -53,7 +53,7 @@ contador = 0
 
 for i, y in enumerate(yr):   # filmes do ano de 1950 e com notas acima de 8.0
     if y == 1950 and mr[i] >= 8.0:
-        print(f"Título: {titulos[i]} | Ano: {y} | Nota: {mr[i]}")
+        print(f"Nome: {mn[i]} | Ano: {y} |")
         contador += 1
 
         if contador == 10:
