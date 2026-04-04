@@ -73,9 +73,9 @@ input_genre = input("Digite um gênero de filme: ").strip().lower()
 
 contador = 0
 
-for i, g in enumerate(gr):   # filmes do gênero digitado pelo usuário
+for i, g in enumerate(gr):   # filmes do gênero digitado pelo usuário + nome, ano e nota
     if input_genre in g.lower():
-        print(f"Nome: {mn[i]} | Gênero: {g} |")
+        print(f"Gênero: {g} | Nome: {mn[i]} | Ano: {yr[i]} | Nota: {mr[i]}")
         contador += 1
         
         if contador == 10:
