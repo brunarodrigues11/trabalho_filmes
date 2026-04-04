@@ -51,9 +51,9 @@ print("Média da avaliação: ", mediamr)
 indice = 0
 contador = 0
 
-for i, y in enumerate(yr):   # filmes do ano de 1950 e com notas acima de 8.0
-    if y == 1950 and mr[i] >= 8.0:
-        print(f"Nome: {mn[i]} | Ano: {y} |")
+for i, y in enumerate(yr):   # filmes do ano de 2000 e com notas acima de 8.0
+    if y == 2000 and mr[i] >= 8.0:
+        print(f"Ano: {y} | Nota: {mr[i]} | Nome: {mn[i]} |")
         contador += 1
 
         if contador == 10:
@@ -63,7 +63,7 @@ contador = 0
 
 for i, m in enumerate(mr):   # filmes com notas acima de 9.0
     if m >= 9.0:          
-        print(f"Nome: {mn[i]} | Nota: {m}")
+        print(f"Nota: {m} | Nome: {mn[i]} |")
         contador += 1
 
         if contador == 10:
