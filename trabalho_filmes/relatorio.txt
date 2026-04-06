@@ -1,0 +1,70 @@
+Relatório de Filmes
+
+====================
+
+Descrição: Esse dataset contém dados de 10.000 filmes dos anos de 1915 a 2023
+
+====================
+
+Quantidade total de registros: 10000
+Quantidade total de colunas: 13
+
+====================
+
+Estatísticas:
+Menor tempo de filme: 45 minutos
+Menor avaliação: 4.9
+Maior tempo de filme: 439 minutos
+Maior avaliação: 9.3
+Média do tempo de filme: 110.72 minutos
+Média da avaliação: 6.73
+
+====================
+
+Filtro: Filmes do ano 2000 com nota acima de 8.0:
+
+Ano: 2000 | Nota: 8.6 | Nome: A Dog's Will
+Ano: 2000 | Nota: 8.5 | Nome: Gladiator
+Ano: 2000 | Nota: 8.4 | Nome: Memento
+Ano: 2000 | Nota: 8.3 | Nome: Requiem for a Dream
+Ano: 2000 | Nota: 8.2 | Nome: Snatch
+Ano: 2000 | Nota: 8.1 | Nome: In the Mood for Love
+Ano: 2000 | Nota: 8.1 | Nome: Amores Perros
+Ano: 2000 | Nota: 8.1 | Nome: Yi Yi: A One and a Two...
+Ano: 2000 | Nota: 8.1 | Nome: Hera Pheri
+Ano: 2000 | Nota: 8.0 | Nome: Werckmeister Harmonies
+
+Filtro: Filmes com nota acima de 9.0:
+
+Nota: 9.3 | Nome: The Shawshank Redemption
+Nota: 9.2 | Nome: The Godfather
+Nota: 9.2 | Nome: Ramayana: The Legend of Prince Rama
+Nota: 9.2 | Nome: The Chaos Class
+Nota: 9.0 | Nome: The Dark Knight
+Nota: 9.0 | Nome: Schindler's List
+Nota: 9.0 | Nome: The Lord of the Rings: The Return of the King
+Nota: 9.0 | Nome: 12 Angry Men
+Nota: 9.0 | Nome: The Godfather Part II
+Nota: 9.0 | Nome: Mirror Game
+
+Filtro: Filmes do gênero 'crime':
+
+Gênero: ['Crime', ' Drama'] | Nome: The Godfather | Ano: 1972 | Nota: 9.2
+Gênero: ['Action', ' Crime', ' Drama'] | Nome: The Dark Knight | Ano: 2008 | Nota: 9.0
+Gênero: ['Crime', ' Drama'] | Nome: 12 Angry Men | Ano: 1957 | Nota: 9.0
+Gênero: ['Crime', ' Drama'] | Nome: The Godfather Part II | Ano: 1974 | Nota: 9.0
+Gênero: ['Crime', ' Mystery', ' Thriller'] | Nome: Mirror Game | Ano: 2016 | Nota: 9.0
+Gênero: ['Crime', ' Drama'] | Nome: Pulp Fiction | Ano: 1994 | Nota: 8.9
+Gênero: ['Crime', ' Drama', ' Mystery'] | Nome: Jai Bhim | Ano: 2021 | Nota: 8.8
+Gênero: ['Action', ' Crime', ' Thriller'] | Nome: Kill Bill: The Whole Bloody Affair | Ano: 2006 | Nota: 8.8
+Gênero: ['Biography', ' Crime', ' Drama'] | Nome: Goodfellas | Ano: 1990 | Nota: 8.7
+Gênero: ['Comedy', ' Crime', ' Mystery'] | Nome: Saban, Son of Saban | Ano: 1977 | Nota: 8.7
+
+====================
+
+Conclusão: 
+O dataset apresenta uma variedade de filmes com diferentes tempos de duração e avaliações. 
+Observa-se que existem filmes com avaliações muito altas, indicando a presença de obras de destaque. 
+Além disso, a análise dos filmes do ano 2000 revela que houve uma boa quantidade de filmes com notas acima de 8.0, sugerindo um ano de produções de qualidade. 
+A diversidade de gêneros também é evidente, permitindo uma ampla gama de opções para os espectadores. 
+Em resumo, o dataset oferece uma visão abrangente do panorama cinematográfico ao longo dos anos, destacando tanto os filmes mais curtos quanto os mais longos, bem como aqueles com as melhores avaliações.
