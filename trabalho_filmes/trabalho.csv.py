@@ -80,3 +80,60 @@ for i, g in enumerate(gr):   # filmes do gênero digitado pelo usuário + nome, 
         
         if contador == 10:
             break
+        
+
+# RELATÓRIO
+
+with open('relatorio.txt', 'w', encoding='utf-8') as relatorio:
+    relatorio.write("Relatório de Filmes\n\n")
+    relatorio.write("====================\n\n")
+    relatorio.write(f"Descrição: Esse dataset contém dados de 10.000 filmes dos anos de 1915 a 2023\n\n")
+    relatorio.write("====================\n\n")
+    relatorio.write(f"Quantidade total de registros: {cont-1}\n")
+    relatorio.write(f"Quantidade total de colunas: {len(leitor.fieldnames)}\n\n")
+    relatorio.write("====================\n\n")
+    relatorio.write("Estatísticas:\n")
+    relatorio.write(f"Menor tempo de filme: {min(rt)} minutos\n")
+    relatorio.write(f"Menor avaliação: {min(mr)}\n")
+    relatorio.write(f"Maior tempo de filme: {max(rt)} minutos\n")
+    relatorio.write(f"Maior avaliação: {max(mr)}\n")
+    relatorio.write(f"Média do tempo de filme: {mediart:.2f} minutos\n")
+    relatorio.write(f"Média da avaliação: {mediamr:.2f}\n\n")
+    relatorio.write("====================\n\n")
+    
+    relatorio.write("Filtro: Filmes do ano 2000 com nota acima de 8.0:\n\n")
+    
+    contador = 0
+    for i, y in enumerate(yr):
+        if y == 2000 and mr[i] >= 8.0:
+            relatorio.write(f"Ano: {y} | Nota: {mr[i]} | Nome: {mn[i]}\n")
+            contador += 1
+            if contador == 10:
+                break
+    
+    relatorio.write("\nFiltro: Filmes com nota acima de 9.0:\n\n")
+    contador = 0
+    for i, m in enumerate(mr):
+        if m >= 9.0:
+            relatorio.write(f"Nota: {m} | Nome: {mn[i]}\n")
+            contador += 1
+            if contador == 10:
+                break
+    
+    relatorio.write(f"\nFiltro: Filmes do gênero '{input_genre}':\n\n")
+    contador = 0
+    for i, g in enumerate(gr):
+        if input_genre in g.lower():
+            relatorio.write(f"Gênero: {g} | Nome: {mn[i]} | Ano: {yr[i]} | Nota: {mr[i]}\n")
+            contador += 1
+            if contador == 10:
+                break
+            
+    relatorio.write("\n====================\n\n")
+    relatorio.write("Conclusão: \n")
+    relatorio.write("O dataset apresenta uma variedade de filmes com diferentes tempos de duração e avaliações. \n")
+    relatorio.write("Observa-se que existem filmes com avaliações muito altas, indicando a presença de obras de destaque. \n")
+    relatorio.write("Além disso, a análise dos filmes do ano 2000 revela que houve uma boa quantidade de filmes com notas acima de 8.0, sugerindo um ano de produções de qualidade. \n")
+    relatorio.write("A diversidade de gêneros também é evidente, permitindo uma ampla gama de opções para os espectadores. \n")
+    relatorio.write("Em resumo, o dataset oferece uma visão abrangente do panorama cinematográfico ao longo dos anos, destacando tanto os filmes mais curtos quanto os mais longos, bem como aqueles com as melhores avaliações.")
+    
