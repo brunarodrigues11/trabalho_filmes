@@ -11,8 +11,10 @@ with open('data.csv', 'r',
     leitor = csv.DictReader(arquivo)
     cont = 1
     
-    print("Dataset: Filmes")
+    print("\n===== Dataset: Filmes =====")
+    print("\n====================\n")
     print("Nome das colunas: ", leitor.fieldnames)
+    print("\n====================\n")
 
     for linha in leitor:
 
@@ -27,9 +29,10 @@ with open('data.csv', 'r',
         elif cont <= 5:
             print(linha)
         cont += 1
-
+    print("\n====================\n")
     print("Quantidade de registros: ", cont-1)
 
+print("\n====================\n")
 
 #  MIN, MAX e MEDIA     
 
@@ -45,6 +48,7 @@ print("Média do tempo de filme: ", mediart)
 mediamr = sum(mr) / len(mr)
 print("Média da avaliação: ", mediamr)
 
+print("\n====================\n")
 
 #  FILTROS     
 
@@ -59,6 +63,8 @@ for i, y in enumerate(yr):   # filmes do ano de 2000 e com notas acima de 8.0
         if contador == 10:
             break
 
+print("\n====================\n")
+
 contador = 0
 
 for i, m in enumerate(mr):   # filmes com notas acima de 9.0
@@ -68,6 +74,8 @@ for i, m in enumerate(mr):   # filmes com notas acima de 9.0
 
         if contador == 10:
             break
+
+print("\n====================\n")
 
 input_genre = input("Digite um gênero de filme: ").strip().lower()
 
@@ -81,7 +89,8 @@ for i, g in enumerate(gr):   # filmes do gênero digitado pelo usuário + nome, 
         if contador == 10:
             break
         
-
+print("\n====================\n")
+    
 # RELATÓRIO
 
 with open('relatorio.txt', 'w', encoding='utf-8') as relatorio:
